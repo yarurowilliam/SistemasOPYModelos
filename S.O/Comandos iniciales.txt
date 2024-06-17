@@ -1,0 +1,51 @@
+ls -l consulta sin entubar
+cd /dev ir a dev
+ls -l |more  consultar todos los archivos
+
+                        permisos dueño  permisos grupo dueño  permisos publico
+ 	1 colum		     2                    3                4
+- archivo corriente         rwx                  rwx              rwx      leer, escribir, ejecutar archivo
+d directorio
+b archivo tipo bloque
+c arhivo tipo caracter
+p archivo tipo pipeline
+l archivo tipo apuntador
+
+sudo su  para super usuario
+groups  saber a que grupo pertenece
+
+man chmod      ayuda
+
+chmod 777 archivo    se le asignan todos los persimos
+chmod 754 archivo    permisos dueño todos, grupo leer y ejecutar, publico leer
+chmod u=rw,g-x,o+x ccc permisos
+
+vi nombre crear archivo
+
+mkdir nombre  para crear directorio
+
+ENTRADAS Y SALIDAS REDIRIGIDAS
+
+cal 2000 > guardar    guarda en un archivo el año 2000
+
+cal 2001 >> guardar   guarda al tiemp y no sobrescribe
+
+more archivo   ver lo que tiene el archivo
+
+< cambiar entrada
+
+> cambiar salida
+
+
+pstree  arbol de procesos ubuntu
+
+man pstree >> arbol guardo el arbol y la carreta del arbol :v
+
+pipes, tubos  |more
+
+cat arbol |more
+
+
+
+
+

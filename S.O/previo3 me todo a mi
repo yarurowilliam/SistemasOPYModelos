@@ -1,0 +1,119 @@
+Nombre: Jorge Daniel Rincones Fernandez
+Identificacion: 1003242276
+
+PARCIAL II
+
+I) RESPONDER
+
+1- Diga el contenido por defaul del directorio: /boot
+
+Respuesta: 
+
+Este directorio ("/boot") contiene todos los ejecutables y archivos que son
+necesarios en el proceso de arranque de este sistema.
+estos archivos deberian ser utilizados antes que el kernel empiece a dar ordenes
+de ejecucion de los diferentes modulos del sistema.
+Cabe aclarar que este es un directorio estàtico.
+
+2- Diga el contenido del archivo: /etc/shadow
+
+Respuesta: 
+
+En este archivo se almacena la informacion de la contraseña cifradas
+para cada una de las cuentas de usuario, ademas, tambien se almacena
+la informacion opcional acerca del envejecimiento de las contraseñas 
+o la expiracion de las mismas
+
+3- Diga que es un pipe (pipeline)
+
+Respuesta:
+
+Un pipe (Pipeline) es una tuberia, una tuberia es un mecanismo de 
+comunicacion entre procesos mediante el paso de mensajes.
+
+Es cuando la salida de un comando sirva como entrada a otro.
+
+4- Que hace la siguiente instruccion: ls -i /etc >> xxx
+
+Respuesta:
+
+ls -i /etc >> xxx 
+Muestra el numero del i-nodo antes del nombre del archivo, donde tenemos que
+un i-nodo contiene las caracteristicas (permisos, fechas, ubicaciòn, no el
+nombre) de el archivo xxx (o de una rchivo regular), directorio, o 
+cualquier otro objeto que pueda contener el sistema de fichero.
+
+muestra el listado 
+
+5- Para que sirve el comando cal
+
+Respuesta:
+
+nos visualiza un calendario en la salida que estamos trabajando
+en la salida standard
+
+II) ESCRIBA EL COMANDO PARA COLOCAR LOS SIGUIENTES PERMISOS
+r - x r - - - - - al archivo: RutaSol
+
+Respuesta:
+
+chmod 540 RutaSol
+
+
+III) EMPAQUETAR LOS ARCHIVOS DEL DIRECTORIO /boot y DESEMPAQUETARLOS
+EN EL DIRECTORIO /descomprimir
+
+Respuesta:
+
+
+
+total 104236
+-rw-r--r-- 1 root root   235811 ene 15 13:10 config-5.3.0-28-generic
+-rw-r--r-- 1 root root 50920393 may 14 07:07 empaquetar.tgz
+-rw-r--r-- 1 root root 41377119 may 13 17:09 initrd.img-5.3.0-28-generic
+-rw-r--r-- 1 root root   182704 ene 28  2016 memtest86+.bin
+-rw-r--r-- 1 root root   184380 ene 28  2016 memtest86+.elf
+-rw-r--r-- 1 root root   184840 ene 28  2016 memtest86+_multiboot.bin
+-rw------- 1 root root  4487587 ene 15 13:10 System.map-5.3.0-28-generic
+-rw-r--r-- 1 root root  9146616 feb  3 13:37 vmlinuz-5.3.0-28-generic
+
+IV) ELABORAR UN APUNTADOR QUE DESDE LA RAIZ DEL DISCO (/), LE APUNTE AL ARCHIVO
+/etc/apt/sources.list
+
+Respuesta:
+
+Comando: 
+
+nos vamos al directorio root
+escribimos esto:
+ln -s /etc/apt/sources.list apuntadorPrevio3
+
+Evidencia:
+
+
+lrwxrwxrwx 1 root root 21 may 14 07:22 apuntadorPrevio3 -> /etc/apt/sources.list
+
+
+V) VISUALIZAR LOS ARCHIVOS DEL PAQUETE ZENITY
+
+Respuesta:
+
+Comando: dpkg -L zenity 
+
+
+/.
+/usr
+/usr/bin
+/usr/bin/gdialog
+/usr/bin/zenity
+/usr/share
+/usr/share/doc
+/usr/share/doc/zenity
+/usr/share/doc/zenity/AUTHORS
+/usr/share/doc/zenity/NEWS.gz
+/usr/share/doc/zenity/README
+/usr/share/doc/zenity/changelog.Debian.gz
+/usr/share/doc/zenity/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/zenity.1.gz

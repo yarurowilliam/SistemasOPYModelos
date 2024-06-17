@@ -1,0 +1,17 @@
+UPC                       SISTEMAS OPERATIVOS             Fecha:  17/ 06/ 2020              GRUPO: SS438                                                                                                                                                         
+CODIGO:  1065829160    Nombre: Bolaños Reales Brayan de Jesus        Firma:
+      
+      I.                                                                                                                       
+Elabore un script Shell que haciendo uso de un vector lea  diez (10) notas de grupo de SO.
+Calcular:
+•	Cantidad alumnos aprobaron la materia
+•	Cantidad alumnos que reprobaron la materia
+•	Nota mayor
+•	Nota menor
+•	Promedio
+II.
+a.  Crear un alias de la interface de tu equipo con la siguiente dirección IP: 192.168.100.28
+b.  Agregar otra salida a la tabla de enrutamiento con el siguiente IP: 192.168.100.0  netmask: 255.255.254.0
+c.  Crear la siguiente regla IP en la tabla mangle:  nodo 192.168.100.50 acepte todas los paquetes de entrada por el puerto 8  
+d. La siguiente dirección IPV4  10.200.250.100 es tipo: A, B, C , D, E             ____________
+e.  Para que sirve la tabla FILTER 

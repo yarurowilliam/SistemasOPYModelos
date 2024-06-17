@@ -1,0 +1,15 @@
+UPC                           II   PARCIAL                      MAYO 10/2020
+
+NOMBRE ESTUDIANTE:                                             IDENTIFICACION:
+
+
+I.   Diga el contenido por default del directorio: /proc
+     Diga el contenido por default del directorio: /etc/rc2.d
+     Para que sirve el comando shutdown 
+     Para que sirve el comando mkfs
+     En que archivo se encuentran los usuarios del sistema.
+II.  Escriba el comando para colocar al archivo: ejecutar.lst 
+     los siguientes permisos:  r w x r - x r - -
+III. Empaquetar los archivos del directorio  /etc/init.d   y  desempaquetarlos en el directorio   /nuevo
+IV.  Elaborar un apuntador que desde la raiz del disco (/), le apunte al daemon   /etc/init.d/kmod
+V.   Desistalar el paquete   zip  e intentar instalarlo de nuevo

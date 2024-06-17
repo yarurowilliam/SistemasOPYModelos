@@ -1,0 +1,150 @@
+UPC                           II   PARCIAL                      MAYO 10/2020
+
+NOMBRE ESTUDIANTE:Luis Bayona Farfan           IDENTIFICACION:1065844846
+
+
+I.   Diga el contenido por default del directorio: /proc
+     Diga el contenido por default del directorio: /etc/rc2.d
+     Para que sirve el comando shutdown 
+     Para que sirve el comando mkfs
+     En que archivo se encuentran los usuarios del sistema.
+II.  Escriba el comando para colocar al archivo: ejecutar.lst 
+     los siguientes permisos:  r w x r - x r - -
+III. Empaquetar los archivos del directorio  /etc/init.d   y  desempaquetarlos en el directorio   /nuevo
+IV.  Elaborar un apuntador que desde la raiz del disco (/), le apunte al daemon   /etc/init.d/kmod
+V.   Desistalar el paquete   zip  e intentar instalarlo de nuevo
+
+RESPUESTAS
+1. Diga el contenido por default del directorio: /proc
+-Imagen de los procesos en memoria.
+
+Diga el contenido por default del directorio: /etc/rc2.d
+
+En estos directorios encontramos los enlaces simbólicos a los
+Shell scripts de los daemons situados en /etc/init.d que nos sirve para indicar al
+sistema si queremos iniciar o parar el daemon al que apunta. Con el mismo nombre
+del enlace se identifica la acción a realizar: si el enlace empieza por S (Start) indica
+que queremos iniciar el daemon.
+
+
+Para que sirve el comando shutdown
+
+Bajar el sistema operativo (apagar/reiniciar)
+
+Para que sirve el comando mkfs
+
+utiliza para dar formato a un dispositivo de almacenamiento de bloque con un determinado sistema de archivos.
+
+En que archivo se encuentran los usuarios del sistema.
+
+en el archivo passwd
+
+II.  Escriba el comando para colocar al archivo: ejecutar.lst
+     los siguientes permisos:  r w x r - x r - -
+
+touch ejecutar.lst
+
+comando chmod 754 ejecutar.lst
+
+-rwxr-xr-- 1 oot root 0 may 13 12:37 ejecutar.lst
+
+III. Empaquetar los archivos del directorio  /etc/init.d   y  desempaquetarlos 
+en el directorio   /nuevo
+
+empaquetar
+
+comando tar -zxvf paqueteinit.tgz *
+
+creo el directorio en la raiz
+
+mkdir nuevo
+
+drwxr-xr-x   2 oot root  4096 may 13 13:04 nuevo
+
+copio y desempaqueto en este directorio (anexo capture)
+
+tar -zxcf paqueteinit.tgz 
+
+acpid
+alsa-utils
+anacron
+apparmor
+apport
+avahi-daemon
+bluetooth
+console-setup.sh
+cron
+cups
+cups-browsed
+dbus
+dns-clean
+gdm3
+grub-common
+hwclock.sh
+irqbalance
+kerneloops
+keyboard-setup.sh
+kmod
+network-manager
+networking
+plymouth
+plymouth-log
+pppd-dns
+procps
+rsync
+rsyslog
+saned
+speech-dispatcher
+spice-vdagent
+udev
+ufw
+unattended-upgrades
+uuidd
+whoopsie
+x11-common
+
+IV.  Elaborar un apuntador que desde la raiz del disco (/), le apunte al dae
+al daemon   /etc/init.d/kmod
+
+
+ln -s /etc/init.d/kmod apuntador
+
+anexo captures
+
+lista de la raiz
+
+total 104
+lrwxrwxrwx   1 oot root    16 may 13 13:41 apuntador -> /etc/init.d/kmod
+drwxr-xr-x   2 oot root  4096 may 13 10:05 bin
+drwxr-xr-x   3 oot root  4096 may 13 13:45 boot
+drwxrwxr-x   2 oot root  4096 abr 22 17:26 cdrom
+drwxr-xr-x  19 oot root  4540 may 13 12:31 dev
+drwxr-xr-x 125 oot root 12288 may 13 11:34 etc
+drwxr-xr-x   6 oot root  4096 may 13 10:52 home
+lrwxrwxrwx   1 oot root    32 may  4 12:12 initrd.img -> boot/initrd.img-5.3.0-51-generic
+lrwxrwxrwx   1 oot root    32 may  4 12:12 initrd.img.old -> boot/initrd.img-5.3.0-46-generic
+drwxr-xr-x  22 oot root  4096 abr 22 17:48 lib
+drwxr-xr-x   2 oot root  4096 feb  3 13:22 lib64
+drwx------   2 oot root 16384 abr 22 17:24 lost+found
+drwxr-xr-x   3 oot root  4096 abr 29 09:01 media
+drwxr-xr-x   2 oot root  4096 feb  3 13:22 mnt
+drwxr-xr-x   2 oot root  4096 may 13 13:25 nuevo
+drwxr-xr-x   2 oot root  4096 feb  3 13:22 opt
+dr-xr-xr-x 275 oot root     0 may 13 10:58 proc
+drwx------   5 oot root  4096 may 10 10:29 root
+drwxr-xr-x  28 oot root   840 may 13 11:10 run
+drwxr-xr-x   2 oot root 12288 may 13 08:43 sbin
+drwxr-xr-x  12 oot root  4096 abr 27 11:59 snap
+drwxr-xr-x   2 oot root  4096 feb  3 13:22 srv
+dr-xr-xr-x  13 oot root     0 may 13 10:58 sys
+drwxrwxrwt  17 oot root  4096 may 13 13:35 tmp
+drwxr-xr-x  11 oot root  4096 feb  3 13:25 usr
+drwxr-xr-x  14 oot root  4096 feb  3 13:30 var
+lrwxrwxrwx   1 oot root    29 may  4 12:12 vmlinuz -> boot/vmlinuz-5.3.0-51-generic
+lrwxrwxrwx   1 oot root    29 may  4 12:12 vmlinuz.old -> boot/vmlinuz-5.3.0-46-generic
+
+
+PUNTO 5 
+COMANDO
+apt-get remove zip
+apt-get install zip

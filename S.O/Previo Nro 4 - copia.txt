@@ -1,0 +1,15 @@
+UPC                           II   PARCIAL                      MAYO 10/2020
+
+NOMBRE ESTUDIANTE:                                             IDENTIFICACION:
+
+
+I.   Diga el contenido por default del directorio: /boot	
+     Diga el contenido del archivo: /etc/shadow
+     Diga que es un pipe (pipeline)
+     Que hace la siguiente instrucción:  ls -i /boot > yyy
+     Para que sirve el comando find
+     
+II.  Escriba el comando para colocar los siguientes permisos  r w x r -  -  r  -  -   al archivo:  Informe.list    
+III. Empaquetar los archivos del directorio  /lib/firmware  y  desempaquetarlos en el directorio   /firmware
+IV.  Elaborar un apuntador que desde la raiz del disco (/), le apunte al archivo   /etc/apt/sources.list
+V.   Visualizar las caracteristicas (estado de instalación) del paquete zenity

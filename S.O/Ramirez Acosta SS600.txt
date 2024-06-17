@@ -1,0 +1,66 @@
+UPC                       SISTEMAS OPERATIVOS             Fecha:  17/ 06/ 2020              GRUPO: SS438                                                                                                                                                         
+CODIGO:1192769390                              Nombre:Johan calixto ramirez acosta               Firma: Johan Ramirez
+         
+     
+
+
+El municipio XYX del Cesar desea sistematizar su impuesto predial para eso contrató a unos estudiantes de SO de la UPC.  El registro del archivo de entrada tiene la siguiente estructura:
+
+Matricula inmobiliaria;nombre dueño;Dirección Predio; Valor básico impuesto;Valor bomberos;Valorarborización;Descuento
+
+Valor neto impuesto  pagar = Valor básico impuesto + Valor bomberos 
++ Valor arborización  –   Descuento 
+
+El campo descuento es el siguiente valor: SI  Con descuento 
+                       NO ->Sin descuento
+Si tiene descuento este es el 15% del valor del impuesto básico.
+
+El archivo de entrada se llama ImpoPredial
+
+
+                                                              MUNICIPIO  XYZ
+                                                       IMPUESTO PREDIAL 2020
+                                        OPCIONES:
+                                            1.	Producir factura de pago del usuario
+                                            2.	Terminar
+                                    Digite la opción deseada: 
+Factura pago:
+Matricula    Dirección Predio     Nombre Dueño Predio       Imp Básico    Bombero      Arborización     Descuento           Total Pagar                       
+---------    -------------          ----------------         ----------   --------     -----------   -------------     -----------------             
+xxxxxxxxx     xxxxxxxxxxxxxxxx     xxxxxxxxxxxxxxxxxxxxxx     9999999999   9999999       99999999999     999999999         99999999
+Los datos del archivo ImpoPredial es:
+
+11111;   Edgan Perez;    Cra 9  54 – 15;    100000; 5000;  10000; SI
+22222;Olga Valdez;Calle 14  10 – 34;300000;20000;15000;NO
+33333;Lenith Quintero;Calle 12  20 – 38;400000;60000;15000;SI
+44444;Johanna Diaz;Diagonal 1  13 - 20;250000;15000;12000;SI
+55555;Dreinis Gomez;Avenida 15   20 – 98; 328000;28000;18000;NO
+
+
+
+
+II. 
+
+•	Visualizar la estructura de la iptable RAW 
+
+        R//     iptables -t raw -L
+
+•	A qué tipo de dirección IPV4   pertenece:   185.100.200.10  
+        
+        R//      Es de tipo B  
+
+•	Cual es el directorio localhost  del servidor Apache en Linux. 
+
+        R//      cd /var/www/html
+
+•	Modificar la tabla de enrutamiento agregando la ruta: 192.168.5.20  =
+      
+       R//       route add -net 192.168.5.20 netmask 255.255.255.0 dev enp0s3
+
+•	Crear una regla iptables con las siguientes características: 
+ Tabla: filter; cadena input; política: Política (A); operación: niegue el acceso a la cadena INPUT (DENY)  
+       
+       R//   iptables -t filter -P INPUT DROP
+
+                                                                                               
+                                    

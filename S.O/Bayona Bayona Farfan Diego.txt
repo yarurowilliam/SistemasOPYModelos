@@ -1,0 +1,28 @@
+
+UPC                       SISTEMAS OPERATIVOS             Fecha:  17/ 06/ 2020              GRUPO: SS438                                                                                                                                                         
+CODIGO:    1065844846    NOMBRE:  Bayona Farfan Luis Diego                      FIRMA
+
+I.
+
+Elaborar un script–shell que haga lo siguiente:
+
+-Leer un archivo llamado calificaciones
+-Contar el nro registros del archivo e imprimir su resultado
+-Visualizar los registros cuya nota es igual a cinco (5)
+-Visualizar los registros cuya nota sea diferente a cinco (5)
+-Cuantos alumnos obtuvieron una nota igual cinco  (5) y cuantos alumnos obtuvieron una nota inferior a cinco (5).
+
+El archivo calificaciones tiene la siguiente estructura:
+
+Identificación, primer apellido, segundo apellido, nombre, nota
+Ejemplo:  1065827775, Garcia, Moreno, Pedro, 4  
+Crear el archivo calificaciones mínimo con  5 registros
+
+II	 
+1.	    Digite el comando que me permita enrutar los mensajes del computador XXXX
+            Ip: 172.16.050.0
+            Interfaz enp0s3
+2.          Introduzca el siguiente comentario en la tabla NAT   “HOLA FELICES VACACIONES”, utilice cualquier dirección IP
+3.          180.200.100.1   es una dirección IPV4 tipo A, B, C, D, E:    ________ 
+4.          Escriba la ubicación del módulo  syscopyarea
+5.          Cuantos bits tiene cualquier dirección IPV4          

@@ -1,0 +1,35 @@
+1. Copiar los archivos del directorio /lib/modules al directorio /home/nuevalibreria
+ -1). Creamos la nueva libreria, vamos de la raiz a (/home) creamos nuevalibreria (mkdir nuevalibreria)
+ -2). Vamos desde la raiz a (/lib)
+ -3). Usamos el comando para copiar (cp -r modules/ ../home/nuevalibreria)
+      - Bonus : cp -r bin /home/descomprimidos   -> En la misma capeta
+ -4) Crear archivo (>Nombre_archivo.txt)
+
+2. Para comprimir un DIRECTORIO (tar -czvf nombre_directorio.tar.gz nombre-directorio)
+   Para descomprimirlo (tar -xzvf backup-nombre_directorio.tar.gz) * aveces
+   Para eliminar un directorio (rm -r bin)
+  
+3. Para visualizar los modulos del sistema ( ls -R /lib/modules/$(uname -r) )
+   Mejor utilizar (lsmod)  (si la columna 3 está en 0 el modulo esta sin utilizar)
+   Para ver detalles (modinfo nombre_del_modulo)
+   Para bajar un modulo (modprobe -r nombre_del_modulo)
+   para subir un modulo (modprobe nombre_del_modulo)
+fin
+
+4. para buscar (find / nombre_del_archivo)
+
+5.instalar paquetes  (apt-get install nombre_del_paquete)
+  desintalar 
+
+6.Mostrar arbol de procesos (pstree)
+  Mostrar procesos en linea (top)
+  Mostrar calendario(cal +el año) 
+  Mostrar estadisticas de memoria (vmstat)
+
+7. Crear un apuntador (ln -s "crear apuntado" /etc/init.d "es la direccion" Inicio "nombre apuntador")
+8. Cambiar permisos (chmod (calcular numero) "permisos nuevos" timezone)
+9. Comando ls   -> (ls -l (lista) ls -l -S(ordenado de short a grande) ls -l -S -r(ordenado de grande a short)
+10. Mostrar ficheros (df -v)
+11. Ver txt desde Consola (nano Nombre_Txt) (Ctrl+o para guardar, Ctrl+x para salir)
+12. Enviar consultas a txt ( (consulta) >> /home/jorge/Escritorio/Consultas.txt)
+ 

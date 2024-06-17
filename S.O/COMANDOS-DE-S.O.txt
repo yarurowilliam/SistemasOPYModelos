@@ -1,0 +1,102 @@
+--------------------------------------------------------------------
+COMANDOS PARA ENTRAR A UN DIRECTORIO O CARPETA 
+
+-->sudo su ==> Super usuario
+
+---> cd / ===>Memoria principal y tambien sirve para salir 
+---> cd /() ===> Nombre de la carpeta a la que se querie ir() 
+---> ls  -l ==> contenido principal de la carpeta 
+---> ls  -l |more ==> entubar Todo el contenido
+--------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+COMANDOS PARA INSTALAR PAQUETES
+--> apt-get install apache2(Nombre de la app que se va a instalar) => Instalar apache 
+--> apt-get remove apache2 => desinstalar apache 
+
+COAMDNOS PARA VER PAQUETES INSTALADOS
+dpkg -l (Nombre del paquete) -->Mostarar lo que contiene el paquete 
+dpkg -p (Nombre del paquete) --> Informacion del paquete 
+dpkg -s (Nombre del paquete) --> conocer paquete al que conoce un archivo 
+dpkg -r (Nombre del paquete) --> eliminar paquete 
+-------------------------------------------------------------------------------------
+ELIMINAR DIRECTORIO
+rmdir (Nombre directorio)
+-----------------------------------------------------------------------
+COMANDOS PARA CAMBIAR LOS PERMISOS 
+
+chmod (codigo en octal) y nombre del archivo 
+
+EJEMPLO
+ rwx r-x r-x
+ 111 101 101  
+  7   5   5 ===> codigo en octal 
+
+chmod 755 (Nombre de archivo(vcsa))
+ ----------------------------------------------------------------------
+COMANDOS PARA CREAR DIRECTORIO 
+
+mkdir (nombre de la carpeta)
+-------------------------------------------------------------------------
+ CREAR APUNTADOR 
+
+ln -s (Ruta del archivo /etc/service Services<--(Nombre del archivo)) 
+
+--------------------------------------------------------------------------
+AGREGAR NUEVO USUARIO 
+useradd (Nombre del usuario)
+
+ELIMAR USUSARIO 
+deluser (nombre del usuario)
+--------------------------------------------------------------------------
+COMANDOS PARA EMPAQUETAR 
+´
+tar -zcvf (Nombre del paquete) (*)<---Copia todo 
+
+MOVER EMPAQUETAD
+mv (Nombre del paquete) (Despues Ruta) 
+mv empaquetado7.tar.tgz /home/bin/festival
+
+DESEMPAQUETAR
+tar -zxvf(nombre del paquete)
+
+COMANDOS PARA ELIMINAR ARCHIVO
+rm (Ruta del arcvhio)
+
+COMANDO PARA COPIAR UN ARCHIVO 
+sp (Ruta del archivo)
+
+COMANDOS PARA ENCONTRAR UN ARCHIVO
+find (ruta del archivo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<

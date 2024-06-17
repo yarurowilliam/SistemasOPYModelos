@@ -1,0 +1,603 @@
+﻿
+cd	 Cambiar de ubicación. 
+Navegar entre directorios	    
+
+deluser	 Eliminar usuario
+cp	 
+Copiar archivos	 
+who	
+ Mostrar usuarios dentro del sistema
+chgrp	
+ Cambiar de grupo (archivo)	
+who am i	
+ Identificar usuario
+chmod	
+ Cambiar de permisos (archivo) 754 nombre
+man	 ayudas
+chown	
+ Cambiar de dueño (archivo)	
+history	 Mostrar comandos utilizados en una sesión
+du	
+ Información sobre espacio ocupado en disco	
+sort	 
+Sortear  u ordenar archivos
+file	 Proporcionar información sobre tipo de archivo	
+top	
+Mostrar procesos en línea
+sudo ps -U Solvetic
+find	 
+Buscar archivos	
+pstree	 
+Mostrar arbol de procesos
+ln	
+ Crear enlaces simbólicos y duros
+vmstart	
+ Mostrar estadisticas de memoria
+mkdir	 Crear directorios
+
+ifconfig Configurar equipo en la red 
+(configurar interfaz) 
+mv	 Mover o renombrar archivos
+route	
+ definir enrutador en la red/ modificar tabla enrutamiento
+echo	
+ Visualizar lineas de texto	
+ifdown 	
+ Desactivar equipo en la red
+df (df -v)	 
+Mostrar espacio libre y ocupado de los file system	 
+iptable	 
+Mostrar tablas iptables
+pwd	
+ Informar sobre ubicación de un usuario	
+lsmod	
+ Visualizar los módulos cargados en el kernel (/proc/modules)
+rm	 
+Borrar archivos	
+modprobe 
+ Cargar módulos y sus dependencias
+cat	
+ Visualizar y concatenar archivos	
+insmod	
+ Cargar un módulo determinado
+ more	
+ Visualizar archivos con pausas	
+depmod	 
+Analizar dependencias entre módulos
+ed	
+ Editor de linea
+rmmod	
+ Sacar o bajar un módulo del kernel
+vi	
+ Editor de linea
+modinfo	 
+Listar información asociada al módulo
+editor	
+ Editor de página	
+ifup	 
+Activar equipo en la red grep	 
+Buscar string/patrones/sartas en archivos
+iwconfig Configurar equipo en red inalambrica (wireless)
+head	 
+Mostrar cabecera de un archivo	 netstat 
+uniq	 
+Buscar lineas iguales en archivos ip	 
+diff	 
+Buscar lineas diferentes en archivos	
+iptables	
+Interfaz que permite visualizar y configurar las reglas que afectan al sistema de filtrado.
+
+
+sudo apt install [nombre_paquete] instalar paquete
+ 
+sudo apt remove [nombre_paquete] desinstalar paquete
+ 
+sudo apt search [nombre_paquete] buscar paquete 
+kill	
+Matar procesos	 
+kill -a pid y proceso
+su	
+Cambiar de usuario sin salir de la sesión.
+
+ps	
+Mostrar procesos
+ ps -u 	usuario + procesos 
+ps -a todos los tty
+init	
+Cambiar de nivel de ejecución en linea
+shutdown  
+Bajar el sistema operativo (apagar/reiniciar)	 
+nice	
+Alterar prioridades de ejecución de procesos
+
+.reboot Reiniciar el sistema operativo	 
+clear	 Limpiar pantalla
+
+sync	 Escribe contenido de buffers en el disco	 
+date	 Mostrar hora y fecha del sistema
+ 
+ime Informar tiempo de un proceso
+passwd	 Cambiar contraseña del usuario 
+
+cal	 Mostrar calendario	
+
+adduser	 adicionar usuario
+moduser	 
+modificar  usuario
+sudo apt show [nombre_paquete] 
+mostar info de un paquete
+ sudo apt install [nombre_paquete]    
+instalar paquete 
+sudo apt remove [nombre_paquete]    
+remover paquete
+sudo apt search [nombre_paquete]    
+buscar paquete
+sudo apt show [nombre_paquete]     
+Mostrar información detallada de un paquete
+sudo apt update     
+Sincronizar lista de paquetes con el repositorio
+sudo apt upgrade      
+Para actualizar nuevas versiones de paquetes instalados en el sistema
+sudo apt full-upgrade      
+Una variante para poder desinstalar paquetes si es requerido para solventar conflictos
+sudo apt edit-sources      
+Editar la listas de repositorios activas
+nsudo apt autoremove   
+Para liberar espacio de paquetes que quedaron por ahí en el sistema (cache, fuentes, carpetas residuales, etc)
+sudo apt list --installed     
+Instalados en el sistema
+sudo apt list --upgradable      
+Actualizables en el sistema
+sudo apt list --all-versions    
+Todo el software soportado
+ sudo useradd -d /home/josego -s /bin/bash        
+josego crear usuario
+sudo passwd josego             
+colocar password
+sudo mkdir /home/josego        
+crear home 
+Si quieren que el usuario tenga permisos de root, tienen que agregar al archivo "sudoers"
+
+
+
+
+###################################################################################################
+
+###################################################
+#                permisos                         #
+###################################################
+#                                                 #
+#       r: significa permiso de lectura (read)
+#     w: significa permiso de escritura (write)
+#   x: significa permiso de ejecución (execution)
+#      –: significa permiso deshabilitado.
+###################################################
+
+– -x	001	1
+-w-	010	2
+-wx	011	3
+r–	100	4
+r-x	101	5
+rw-	110	6
+rwx	111	7
+
+
+chmod 755 prueba.txt : Asigna permisos de lectura, escritura y ejecución para el propietario del archivo (7), lectura y ejecución para los usuarios del mismo grupo (5), y también para otros usuarios (5).
+
+
+######################################################################################################
+
+tar -ZCVF  nombre_ar.tgz     crear paquete
+tar -ZXVF  nombre.tgz        descomprimir
+######################################################################################################
+
+*****************************************************************************************
+
+--------------------------------------------------------------------
+
+
+
+COMANDOS PARA ENTRAR A UN DIRECTORIO O CARPETA 
+
+--> sudo su 
+==> Super usuario
+
+---> cd / 
+===> Memoria principal y tambien sirve para salir 
+---> cd /() ===> Nombre de la carpeta a la que se querie ir() 
+
+---> ls  -l ==> contenido principal de la carpeta 
+---> ls  -l 
+|more ==> entubar Todo el contenido
+
+----------------------------------------------------------------
+----
+
+-----------------------------------------
+----------------------------------------------
+
+COMANDOS PARA INSTALAR PAQUETES
+--> apt-get install apache2(Nombre de la app que se va a instalar) => Instalar apache 
+
+--> apt-get remove apache2 => desinstalar apache 
+
+
+
+
+COMANDOS PARA VER PAQUETES INSTALADOS 
+dpkg -l (Nombre del paquete)
+--> Mostarar lo que contiene el paquete 
+dpkg -p (Nombre del paquete) 
+--> Informacion del paquete 
+dpkg -s (Nombre del paquete)
+--> conocer paquete al que conoce un archivo 
+dpkg -r (Nombre del paquete) 
+--> eliminar paquete sudo apt-get --purge remove [nombre del programa]
+
+
+
+-------------------------------------------------------------------------------------
+
+ELIMINAR DIRECTORIO 
+rmdir (Nombre directorio)
+
+
+-----------------------------------------------------------------------
+
+
+COMANDOS PARA CAMBIAR LOS PERMISOS 
+
+
+chmod (codigo en octal) y nombre del archivo 
+
+EJEMPLO
+ rwx r-x r-x
+  111 101 101  
+  7   5   5 ===> codigo en octal 
+
+chmod 755 (Nombre de archivo(vcsa))
+ 
+----------------------------------------------------------------------
+
+
+COMANDOS PARA CREAR DIRECTORIO 
+
+
+mkdir (nombre de la carpeta) 
+
+
+-------------------------------------------------------------------------
+ 
+
+CREAR APUNTADOR 
+
+ln -s (Ruta del archivo /etc/service Services<--(Nombre del archivo))
+
+ 
+
+--------------------------------------------------------------------------
+
+
+AGREGAR NUEVO USUARIO 
+useradd (Nombre del usuario)
+
+
+ELIMAR USUSARIO 
+deluser (nombre del usuario)
+
+
+--------------------------------------------------------------------------
+
+
+COMANDOS PARA EMPAQUETAR 
+´
+tar -zcvf (Nombre del paquete) (*)<---Copia todo 
+tar -tf
+
+MOVER EMPAQUETAD
+mv (Nombre del paquete) (Despues Ruta) 
+mv empaquetado7.tar.tgz /home/bin/festival
+
+
+DESEMPAQUETAR
+tar -zxvf(nombre del paquete)
+
+
+COMANDO PARA CREAR ARCHIVO
+ touch nombre_archivo
+
+ 
+COMANDOS PARA ELIMINAR ARCHIVO 
+rm (Ruta del arcvhio)
+
+
+COMANDO PARA COPIAR UN ARCHIVO 
+cp (Ruta del archivo)
+
+
+COMANDOS PARA ENCONTRAR UN ARCHIVO
+find (ruta del archivo)
+
+
+EMPAQUETA Y COMPRIME
+ tar -czvf nombrearchivo.tgz /etc/init.d 
+
+PARA VER LO QUE ESTA ADENTRO COMPRMIDO 
+tar -tf nombrearchivo.tgz
+
+kernel 
+--> MUESTRA LOS MODULOS CARGADOS EN MEMORIA
+MODINFO (NUCLEO)
+ lsmod
+--> MUESTRA INFORMACION DEL MODULO 
+insmod 
+--> CARGAR UN MODuLO
+ rmmod 
+--> ELIMINAR MODULO
+ dopmod 
+--> ANALIZA DEPENDENCIA ENTRE MODULO 
+lsmod more
+
+
+tar -xzvf nombrearchivo a descomprimir
+
+
+
+
+    
+
+
+uname -a version de kernel
+
+
+history
+history -c borrar
+history>nombreArchivo.txt
+
+
+MOSTRAR LOS DAEMONS 
+service --status-all
+
+
+
+
+****************************************************
+
+
+copiar archivos de un directorio y pasarlos a otro 
+cp /etc/rc6.d/* /boot/reinicio1
+
+
+cambiar permisos a todo
+ chmod 764 *
+-------------------------------
+
+
+
+mostrar los inodos ubicados en el boot/reinicio1
+df -i
+df -l 
+archivos del sistema
+ df -a espacio libre y ocupado
+
+
+--------------------------------------------
+
+crear un archivo llamado listado con el contenido del directorio reinicio
+ls> LISTADO 
+more LISTADO
+
+
+---------------------------
+
+
+crear un usuario y navegar en el 
+adduser deimer 
+cd home 
+ls -l
+
+
+--------
+
+
+instalar el paquete apache-2 
+sudo apt install apache2
+
+desintalar un paquete
+sudo apt-get remove apache2
+como borrar un directorio 
+mrdir -r nombre del directorio 
+
+
+mostrar los file system del sistema
+df -Th
+
+crear un apuntador al archivo etc/services
+ln -s etc/services nombre del apuntador
+
+ls -l
+
+
+mostrar archivos del paquete KDE
+dpkg -L nombre del paquete(apache2)
+
+empaquetar y desempaquetar 
+
+creamos la carpeta 
+mkdir manuela en etc 
+comprimimos todo eso 
+tar -zcvf manuela.tgz 
+*
+mostramos el contenido ls -l
+
+nos movemos a boot/reinicio y descomprimos ese archivo y copiamos 
+ cp manuela.tgz /boot/reinicio1
+
+y despues descomprimimos 
+tar -zxvf manuela.tgz
+
+----------------------------------------------
+----------------------------------------------
+
+
+
+2 parciallista de procesos en linea  
+top
+
+estadisticas de memoria
+ vmstat
+----------------------
+
+calendario 
+cal 2000
+--------------------------
+
+renombrar un archivo 
+mv comando.txt comando2.txt
+
+
+muestra los arboles de procesos 
+pstree 
+
+crear el archivo home/parcial2/usuario que contenga los usuario que en ese momento se encuentran dentro del sistema
+ 
+agregarle al archivo el arbol del proceso del sistema 
+ubicarse en el etc
+cp /etc/passwd /home/parcial/perra.txt
+irse 
+pa parcial y visulaizar con more perra.txt
+pstree>> perra.txt
+
+
+
+
+PID de los usuarios dentro del sistema 
+ps aux
+
+
+
+1. Copiar los archivos del directorio /lib/modules al directorio /home/nuevalibreria
+ -1). 
+Creamos la nueva libreria, vamos de la raiz a (/home) creamos nuevalibreria (mkdir nuevalibreria)
+ -2). 
+Vamos desde la raiz a (/lib)
+ -3). 
+
+Usamos el comando para copiar (cp -r modules/ ../home/nuevalibreria)
+   
+-> Bonus : cp -r bin /home/descomprimidos  
+-> En la misma capeta
+ -4)
+ 
+Crear archivo (>Nombre_archivo.txt)
+
+
+
+2. Para comprimir un DIRECTORIO (tar -czvf nombre_directorio.tar.gz nombre-directorio)
+  
+Para descomprimirlo (tar -xzvf backup-nombre_directorio.tar.gz) * aveces
+   
+Para eliminar un directorio (rm -r bin)
+  
+
+
+3. Para visualizar los modulos del sistema ( ls -R /lib/modules/$(uname -r) )
+   
+Mejor utilizar (lsmod)  (si la columna 3 está en 0 el modulo esta sin utilizar)
+   
+Para ver detalles (modinfo nombre_del_modulo)
+   
+Para bajar un modulo (modprobe -r nombre_del_modulo)
+   
+para subir un modulo (modprobe nombre_del_modulo)
+fin
+
+
+
+4.para buscar (find / nombre_del_archivo)
+
+
+
+5.instalar paquetes  (apt-get install nombre_del_paquete)
+ desintalar 
+
+
+6.Mostrar arbol de procesos (pstree)
+  
+Mostrar procesos en linea (top)
+  
+Mostrar calendario(cal +el año) 
+  
+Mostrar estadisticas de memoria (vmstat)
+
+
+
+7. Crear un apuntador (ln -s "crear apuntado" /etc/init.d "es la direccion" Inicio "nombre apuntador")
+
+
+8.Cambiar permisos (chmod (calcular numero) "permisos nuevos" timezone)
+
+
+9.Comando ls   -> (ls -l (lista) ls -l -S(ordenado de short a grande) ls -l -S -r(ordenado de grande a short)
+
+
+10. Mostrar ficheros (df -v)
+
+
+11. Ver txt desde Consola (nano Nombre_Txt) (Ctrl+o para guardar, Ctrl+x para salir)
+
+
+12. Enviar consultas a txt ( (consulta) >> /home/jorge/Escritorio/Consultas.txt)
+ 
+
+ 
+
+
+ls -lS ordena por peso
+ls -ls 
+
+
+
+cd / entra y navegar
+ls -l
+
+who -Hu 
+
+--> muestra el PID de los usuarios actualmente conectado 
+
+ps -u 
+--> muestra el PID de los usuarios actualmente conectado 
+ 
+
+
+mv nombre_viejo nombre_nuevo
+ rm archivo a borrar
+
+
+
+
+
+PARA COPIAR LOS ARCHIVOS QUE ESTAN DENTRO DE UNA CARPETA
+ me meto en la carpeta por ejemplo
+ cd /etc/init.d
+para copiar 
+cp -r * /home/nuevo
+mv * / ruta 
+
+
+borro un directorio lleno con rm -r nombre 
+	
+	
+
+
+MOSTRAR LOS INODOS 
+Me voy a la carpeta y ls -i
+
+
+1. para ver el proceso del login
+ ps -ef | grep login 
+y kill y el numero
+	 	 
+
+
+

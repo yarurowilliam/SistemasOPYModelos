@@ -1,0 +1,80 @@
+UPC                           II   PARCIAL                      MAYO 14/2020
+
+NOMBRE ESTUDIANTE:Jean Carlos Torres Caleño                                          IDENTIFICACION:1067731158
+
+
+I.   Diga el contenido por default del directorio: /boot
+     Diga el contenido del archivo: /etc/shadow
+     Diga que es un pipe (pipeline)
+     Que hace la siguiente instrucción:  ls -i /boot > yyy
+     Para que sirve el comando find
+     
+     
+     RESPUESTAS
+     
+ I.Diga el contenido por default del directorio: /boot 
+	incluye todos los ejecutables y archivos que son necesarios en el proceso de arranque 		del sistema
+	
+   Diga el contenido del archivo: /etc/shadow
+  	En este archivo almacenamos las contraseñas cifradas y nos da información sobre 		caducidad y validez de la cuenta.
+  	
+   Diga que es un pipe (pipeline)
+      	 Es la posibilidad de encadenar comandos a través del uso de tuberías (pipes), que 		permiten que la salida de un comando sirva como entrada a otro
+   	 
+   Que hace la siguiente instrucción:  ls -i /boot > yyy
+   	permite listar el contenido del directorio /boot
+   
+   Para que sirve el comando find
+   	se utiliza para buscar archivos dentro de la jerarquía de directorios del sistema y 	opcionalmente, que cumplan una serie de reglas de búsqueda.
+   	
+     
+II.  Escriba el comando para colocar los siguientes permisos  r w x r -  -  r  -  -   al archivo:  Informe.list  
+
+respuesta
+con el comando touch se crea el archivo llamado Informe.list
+touch Informe.list
+
+y luego con el comando chmod se le da los permisos
+chmod 744 Informe.list
+-rwxr--r-- 1 oot root 0 may 14 06:27 Informe.list
+
+  
+III. Empaquetar los archivos del directorio  /lib/firmware  y  desempaquetarlos en el directorio   /firmware (ANEXO CAPTURAS PARA EVIDENCIA)
+
+empaquetamos tar -zcvf empaquetarfirmware.tgz *
+copiamos el empaquetado en la carpeta que creamos en raiz llamada firmware con el comando mkdir firmware
+cp empaquetarfirmware.tgz /firmware
+preocedemos a desempaquetar con
+tar -zxvf empaquetarfirmware.tgz
+
+
+IV.  Elaborar un apuntador que desde la raiz del disco (/), le apunte al archivo   /etc/apt/sources.list (anexo evidencia)
+
+con el siguiente comando se realiza el apuntador pero lo hacemos desde raiz
+
+ln -s /etc/apt/sources.list sourcesapuntador
+
+
+V.   Visualizar las caracteristicas (estado de instalación) del paquete zenity 
+	(anexo evidencia)
+
+con el comando dpkg -s zenity visualizamos
+
+Package: zenity
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 164
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 3.28.1-1
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk-3-0 (>= 3.19.12), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libwebkit2gtk-4.0-37 (>= 2.15.1), libx11-6, zenity-common (>= 3.28.1-1)
+Description: Display graphical dialog boxes from shell scripts
+ Zenity allows you to display GTK+ dialogs from shell scripts; it is a
+ rewrite of the `gdialog' command from GNOME 1.
+ .
+ Zenity includes a gdialog wrapper script so that it can be used with
+ legacy scripts.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/Zenity

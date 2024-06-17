@@ -1,0 +1,20 @@
+UPC                       SISTEMAS OPERATIVOS             Fecha:  17/ 06/ 2020              GRUPO: SS438                                                                                                                                                         
+CODIGO:   1062815348     Nombre: Cotes Barrozo Anibal José                Firma:
+                                 
+      
+      I.                                                                        
+Elabore un script Shell que realice lo siguiente: 
+1. Crear un arreglo de n elementos. Estos elementos deben ser capturados no asignados (utilizando el comando read). Listarlo
+2. Ordenarlo ascendentemente. Listarlo
+3. Calcular el mayor elemento
+4. Calcular el menor elemento
+5. Calcular la longitud del arreglo
+
+II.
+a.	Crear un alias de tu interface con la siguiente dirección IP: 192.168.100.28
+
+b. Agregar otra salida a la tabla de enrutamiento con el siguiente IP: 192.168.100.0    netmask: 255.255.254.0
+c. Crear la siguiente regla IP en la tabla filter:  nodo 192.168.100.50 acepte todas los  paquetes de entrada por el puerto 8  
+d. Indicar el lugar de ubicación del módulo video del kernel
+e. Cuantos bits tiene una dirección IPV4
+

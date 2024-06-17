@@ -1,0 +1,33 @@
+#!/bin/sh
+#
+#Este script genera factura predial
+clear
+while true 
+do
+echo "   "
+echo "   "
+echo "   "
+echo "   "
+echo "                               MUNICIPIO  XYZ"
+echo "                          IMPUESTO PREDIAL 2020"
+echo "                         OPCIONES:"
+echo "                          1.	Producir factura de pago del usuario"
+echo "                          2.	Terminar"
+echo "                          Digite la opción deseada:"
+read opcion
+case $opcion in 
+ 1) echo "   "
+    echo "   "
+    echo "Por favor ingrese los datos separados por coma"
+    echo "     FACTURA DE PAGO"
+    echo "               Matricula;    Nombre Dueño Predio;     Dirección Predio;       Imp Básico;    Bombero;      Arborización;     Descuento;           Total Pagar"                       
+    echo "               --------    -------------          ----------------         ----------   --------     -----------   -------------     -----------------"             
+    awk -F "," '{print $1"        " $2  "               " $3   "               " $4    "      " $5   "          "  $6  "        " $7 "   " ($4 + $5 + $6)}' ImpoPredial
+2) exit;;
+ *) echo "Opcion invalida. Digite de nuevo"
+    read xxx
+    clear;;
+esac
+done
+
+          
